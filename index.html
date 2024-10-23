@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Beneficiarios</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Agregar Beneficiario</h1>
+        <form id="FormularioBen">
+            <label for="Nombre">Nombre</label>
+            <input type="text" id="Nombre"required>
+            <label for="Años">Edad</label>
+            <input type="number" id="Años" required>
+            <label for="Ingresos">Ingresos Mensuales</label>
+            <input type="number" id="Ingresos" required>
+            <label for="Familia">Cantidad de Miembros de la familia</label>
+            <input type="number" id="familia" required>
+            <button type="submit">Agregar Beneficiario</button>
+            <button type="button" id="filtroBtn">Beneficiarios con Ingresos < $200</button>
+            
+        </form>
+        <table id="TablaBen">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Ingresos Mensuales</th>
+                    <th>Cantidad de Miembros Familia</th>
+                </tr>
+            </thead>
+            <tbody id="tabla">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
